@@ -1,0 +1,476 @@
+@font-face {
+    font-family: 'Colus_regular';
+    src: url('font/colus_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #606060;
+    background-image: url(img/icon/L_body.png),url(img/icon/R-body.png);
+    background-position: left, right;
+    background-repeat: repeat-y, repeat-y;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+@media (max-width: 425px) {
+    body {
+      width: 425px;
+      overflow-x: scroll;
+    }
+  }
+
+.close {
+    position: absolute !important;
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+
+/*Шапка*/
+.header_top {
+    background-color: #DCBE93;
+    box-shadow: 0px 25px 25px 0px rgba(220, 190, 147, 0.6);
+}
+
+.fixed_contaner {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+    .user {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .user h1 {
+        font-family: 'Colus_regular';
+        font-size: 25px;
+    }
+
+    .header_logo {
+        width: 100%;
+        height: 570px;
+        background-image: url(img/icon/logo_header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .user_nomer {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .user_nomer h1 {
+        font-family: 'Colus_regular';
+        font-size: 25px;
+    }
+
+/*Центральное меню*/
+.flex_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
+.flex_menu::after {
+    content: '';
+    width: 600px;
+    height: 5px;
+    display: block;
+    padding-top: 30px;
+    border-bottom: 2px solid #DCBE93;
+}
+
+@media (max-width: 1400px) {
+    .flex_menu {
+        padding: 0 10px;
+    }
+}
+
+/*Левая колонка*/
+.left_menu {
+    width: 50%;
+    height: 1225px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #606060;
+}
+
+    .foto_advokat {
+        width: 386px;
+        margin-bottom: 15px;
+    }
+
+    .foto_advokat h2 {
+        margin: 10px 0;
+        border-bottom: 2px solid #DCBE93;
+        font-family: 'Colus_regular';
+        color: #DCBE93;
+        text-align: center;
+    }
+
+    .foto_advokat img {
+        width: 386px;
+        border: 2px solid #DCBE93;
+    }
+
+    .foto_info {
+        width: 386px;
+    }
+
+    .foto_info h2 {
+        margin: 10px 0;
+        border-bottom: 2px solid #DCBE93;
+        font-family: 'Colus_regular';
+        color: #DCBE93;
+        background-color: #606060;
+        text-align: center;
+    }
+
+    .foto_info img {
+        width: 386px;
+        border: 2px solid #DCBE93;
+    }
+
+@media (max-width: 800px) {
+    .left_menu {
+        width: 100%;
+        height: 1225px;
+        margin-bottom: 20px;
+        background-color: #606060;
+    }
+
+    .foto_advokat {
+        width: 100%;
+        margin-bottom: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .foto_advokat h2 {
+        width: 100%;
+    }
+
+    .foto_info {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .foto_info h2 {
+        width: 100%;
+    }
+}  
+
+/*Правая колонка*/
+.rigth_menu {
+    width: 50%;
+    background-color: #606060;
+    /* border: 1px solid blue; */
+}
+
+@media (max-width: 800px) {
+
+    .rigth_menu {
+        width: 100%;
+    }
+}
+
+    .life_advokat {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .life_advokat h2 {
+        margin: 10px 0;
+        padding: 10px 40px;
+        font-family: 'Colus_regular';
+        color: #DCBE93;
+        text-align: center;
+        background-image: url("img/icon/user.png");
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: left;
+        border-bottom: 2px solid #DCBE93;
+    }
+
+    .info_advokat_1{
+        width: 100%;
+        padding: 0 25px;
+        margin-bottom: 30px;
+    }
+
+    .info_advokat_1 p {
+        font-family: 'Colus_regular';
+        color: white;
+        padding: 10px 5px;
+    }
+
+    .info_advokat_1 h3 {
+        padding-left: 5px;
+        font-family: 'Colus_regular';
+        color: #DCBE93;
+    }
+
+    .info_advokat_1 h3::after {
+        content: '';
+        width: 300px;
+        height: 5px;
+        display: block;
+        border-bottom: 2px solid #DCBE93;
+    }
+
+    .info_advokat_1 ul {
+        list-style-type: none;
+        padding: 10px 5px;
+    }
+    
+    .info_advokat_1 ul li {
+        font-family: 'Colus_regular';
+        color: white;
+        background-image: url('img/icon/ok.png');
+        background-repeat: no-repeat;
+        background-size: 20px;
+        padding-left: 25px;
+    }
+
+    .info_advokat_2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .school_1 {
+        margin-right: 10px;
+    }
+
+    .school_2 {
+        margin-left: 10px;
+    }
+
+    .school_1,
+    .school_2 {
+        width: 45%;
+        border: 2px solid #DCBE93;
+        border-radius: 10px;
+    }
+
+    .school_1 h3,
+    .school_2 h3 {
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: 'Colus_regular';
+        color: #DCBE93;
+    }
+
+    .school_1 h3::after {
+        content: '';
+        height: 5px;
+        display: block;
+        border-bottom: 2px solid #DCBE93;
+    }
+
+    .school_2 h3::after {
+        content: '';
+        height: 5px;
+        display: block;
+        border-bottom: 2px solid #DCBE93;
+    }
+
+    .school_1 ul,
+    .school_2 ul {
+        list-style-type: none;
+        padding: 5px 20px;
+        
+    }
+
+    .school_1 ul li,
+    .school_2 ul li {
+        font-family: 'Colus_regular';
+        color: white;
+        background-image: url('img/icon/ok.png');
+        background-repeat: no-repeat;
+        background-size: 20px;
+        padding-left: 25px;
+    }
+
+    .mobile_info_advokat_2 {
+        display: none;
+        background-color: #606060;
+    }
+
+@media (max-width: 1140px) {
+
+    .school_1 {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .school_2 {
+        margin-left: 0px;
+    }
+
+    .info_advokat_2 {
+        padding: 0 10px;
+    }
+
+    .school_1,
+    .school_2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 975px) {
+
+    .info_advokat_2 {
+        display: none;
+    }
+
+    .mobile_info_advokat_2 {
+        display: block;
+    }
+}
+
+/*Подвал*/
+
+.flex_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+    .name_footer_left {
+        width: 45%;
+        border: 2px solid #DCBE93;
+        border-radius: 10px;
+        background-color: #606060;
+    }
+
+    .name_footer_left h2 {
+        padding: 10px 0;
+        text-align: center;
+        font-family: 'Colus_regular';
+        color: #DCBE93;
+    }
+
+    .name_footer_left h2::after {
+        content: '';
+        height: 5px;
+        display: block;
+        border-bottom: 2px solid #DCBE93;
+    }
+
+    .name_footer_left ul {
+        list-style-type: none;
+        padding: 20px 20px;
+    }
+
+    .name_footer_left ul li {
+        margin: 10px 0;
+    }
+
+    .name_footer_left ul li a {
+        text-decoration: none;
+        font-family: 'Colus_regular';
+        color: white;
+        padding-left: 30px;
+    }
+
+    .footer_map {
+        background-image: url("img/icon/map.png");
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: left;
+    } 
+
+    .footer_mail {
+        background-image: url("img/icon/mail.png");
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: left;
+    }
+
+    .footer_phone {
+        background-image: url("img/icon/phone.png");
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: left;
+    }
+
+
+
+    .name_footer_rigth {
+        width: 45%;
+        border: 2px solid #DCBE93;
+        border-radius: 10px;
+        background-color: #606060;
+    }
+
+    .name_footer_rigth h2 {
+        padding: 10px 0;
+        text-align: center;
+        font-family: 'Colus_regular';
+        color: #DCBE93;
+    }
+
+    .name_footer_rigth h2::after {
+        content: '';
+        height: 5px;
+        display: block;
+        border-bottom: 2px solid #DCBE93;
+    }
+
+    .name_footer_rigth ul {
+        columns: 2;
+        list-style-type: none;
+        padding: 20px 20px;
+        font-family: 'Colus_regular';
+        color: white;
+    }
+
+@media (max-width: 975px) {
+
+    .flex_footer {
+        padding: 0 10px;
+    }
+
+    .name_footer_left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .name_footer_rigth {
+        width: 100%;
+    }
+}
+
+/*end*/
+.end {
+    padding: 20px 0;
+    background-color: #DCBE93;
+}
+
+.end_end {
+    display: flex;
+    justify-content: center;
+    font-family: 'Colus_regular';
+}
